@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img src="assets/Logo.png" alt="Logo" class="logo">
+            <textarea id="inputText" oninput="validarTexto()" placeholder="Ingrese el texto aquí"></textarea>
+            <p id="advertencia">Solo letras minúsculas y sin acentos.</p>
+            <div class="buttons">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div id="output-container">
+                <img id="muneco" src="assets/Muñeco.png" alt="Muñeco">
+                <p id="mensaje">Ningún mensaje fue encontrado</p>
+                <p id="submensaje">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <textarea id="outputText" readonly></textarea>
+                <button id="copiarBtn" class="hidden" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+   <footer>
+    <p>Desarrollado por Jean Paul Ruiz</p>
+   </footer>
+</body>
+</html>
